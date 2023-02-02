@@ -9,7 +9,32 @@
     <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    <div class = title>TIME FOR RPS BRUV</div>
+    <div class=title>Rock Paper Scissors!</div>
+    <div class=description> It is time to test your Rock Paper Scissors skills against the fabled RNG so that I may demonstrate my skills in Javascript, HTML, and CSS.  First to 5 wins!</div>
+    <div class=selectOne>
+        <button class = "option" onclick="playRound(0)">
+            <img class = clipart src ='./images/rock.png' alt = "Rock clipart">
+            <div>Rock</div>
+        </button>
+        <button class = "option" onclick="playRound(1)">
+            <img class = clipart src ='./images/paper.png' alt = "Paper clipart">
+            <div>Paper</div>
+        </button>
+        <button class = "option" onclick="playRound(2)">
+            <img class = clipart src ='./images/scissors.png' alt = "Scissors clipart">
+            <div>Scissors</div>
+        </button>
+    </div> 
+    <div class="scoreboard">
+        <div class="score">
+            <div id = "userScore">0</div>
+            <div class="secondary">You</div>
+        </div>
+        <div class="score">
+            <div id = compScore>0</div> 
+            <div class="secondary">Computer</div>
+        </div>
+    </div>
  
 
 </body>

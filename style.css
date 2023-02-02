@@ -2,8 +2,101 @@ body {
     background-image: url('images/background.jpeg');
     background-size: auto;
     color: white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 15px;
 }
 
 .title {
-    
+    font-size: 56px;
+    font-weight: bolder;
+    margin-top: 28px;
+}
+
+.description {
+    text-align: center;
+}
+
+.selectOne {
+    display:flex;
+    gap: 30px;
+    margin: 48px;
+    justify-content: space-between;
+}
+
+.option {
+    border-radius: 10px;
+    font-size: 36px;
+    border: solid white;
+    padding: 20px;
+    text-align: center;
+    background: rgba(60, 60, 60, 0.3);
+    color: white;
+}
+
+.option:hover {
+    background: rgba(250, 255, 0, 0.2);
+    border: solid yellow;
+    transform: scale(1.1);
+}
+
+.score {
+    border-radius: 10px;
+    font-size: 32px;
+    border: solid white;
+    padding: 20px;
+    min-width: 70px;
+    background: rgba(60, 60, 60, 0.7);
+}
+
+
+.scoreboard {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.clipart {
+    height:65px;
+    width:auto;
+}
+
+.clipartSB {
+    height: 35px;
+    width:auto;
+}
+
+.secondary {
+    font-size: 18px; 
+    margin-top: 8px;
+}
+
+.winner {
+    background: rgba(0, 255, 0, 0.2);
+    font-weight: bolder;
+}
+
+.loser {
+    background: rgba(255, 0, 0, 0.2);
+    font-weight: bolder;
+}
+
+.tie {
+    background: rgba(255, 255, 0, 0.2);
+    font-weight: bolder;
+}
+
+.reloadButton {
+    background: green;
+    color: white;
+    max-width: 300px; 
+    padding: 20px;
+    border-radius: 10px;
+    border: solid white 2px;
+}
+
+.updateFlex {
+    flex-direction: column;
+    align-items: center;
 }
